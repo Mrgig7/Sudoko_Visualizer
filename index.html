@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Project::Sudoku Visualiser</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sudoku Visualiser</h1>
+    </header>
+    <div id="main">
+        <div id="board"></div>
+        <div id="controls">
+            <h1>Controls</h1>
+            <div class="slider" id="animSlider">
+                <label for="anim" id="animLabel">Animations</label>
+                <input type="checkbox" name="anim" id="anim" />
+            </div>
+            <div class="slider" id="warnSlider">
+                <label for="warn" id="warnLabel">Warnings</label>
+                <input type="checkbox" name="warn" id="warn" />
+            </div>
+            <div id="delaySettings">
+                <label for="delay" id="delayLabel">Delay: 
+                    <span id="showDelay"></span>ms
+                </label>
+                <input type="range" name="delay" id="delay" 
+                min="50" max="300" value="150" step="50"/>
+            </div>
+            <button id="solve">Solve</button>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+    <script type="module" src="assets/scripts/main.js"></script>
+</body>
+</html>
